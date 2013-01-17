@@ -28,14 +28,14 @@
 	     (define-runtime-path sdl-library-path
 	       (build-path "linux64" "libSDL-1.2.so.0.11.4"))
              (define-runtime-path sdl-image-library-path
-	       (build-path "linux64" "libSDL_image-1.2")))]
+	       (build-path "linux64" "libSDL_image-1.2.so.0.8.4")))]
 	["i386-linux"
 	 #'(begin
              (log-debug "sdl: linux32")
 	     (define-runtime-path sdl-library-path
 	       (build-path "linux32" "libSDL-1.2.so.0.11.4"))
              (define-runtime-path sdl-image-library-path
-               (build-path "linux32" "libSDL_image-1.2")))]
+               (build-path "linux32" "libSDL_image-1.2.so.0.8.4")))]
         ["win32\\x86_64"
          #'(begin
              (log-debug "sdl: windows 64 bit")
