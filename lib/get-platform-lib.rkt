@@ -3,6 +3,8 @@
 ;; A compatibility library to help get SDL running on the major
 ;; platforms.
 
+(provide sdl-lib sdl-image-lib)
+
 (require ffi/unsafe
          racket/runtime-path
          (for-syntax racket/base
@@ -66,5 +68,4 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 (define-sdl-library-paths)
 (define sdl-lib (ffi-lib sdl-library-path))
-
-(provide sdl-lib)
+(define sdl-image-lib (ffi-lib sdl-image-library-path))
